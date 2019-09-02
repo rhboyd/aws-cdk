@@ -430,7 +430,7 @@
         "MyHandlerServiceRoleFFA06653"
       ]
     },
-    "MyHandlerApiPermissiontestapigatewayrestapimyapi1AE401C4GETv1toys00F704BC": {
+    "myapiv1toysApiPermissiontestapigatewayrestapimyapi1AE401C4GETv1toys4996AB00": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -471,7 +471,7 @@
         }
       }
     },
-    "MyHandlerApiPermissionTesttestapigatewayrestapimyapi1AE401C4GETv1toysDBCC8082": {
+    "myapiv1toysApiPermissionTesttestapigatewayrestapimyapi1AE401C4GETv1toys235E617F": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -508,7 +508,7 @@
         }
       }
     },
-    "MyHandlerApiPermissiontestapigatewayrestapimyapi1AE401C4GETv1books96EB3DB8": {
+    "myapiv1booksApiPermissiontestapigatewayrestapimyapi1AE401C4GETv1books569CDE64": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -549,7 +549,7 @@
         }
       }
     },
-    "MyHandlerApiPermissionTesttestapigatewayrestapimyapi1AE401C4GETv1books906B3BB6": {
+    "myapiv1booksApiPermissionTesttestapigatewayrestapimyapi1AE401C4GETv1books83C4BA55": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -586,7 +586,7 @@
         }
       }
     },
-    "MyHandlerApiPermissiontestapigatewayrestapimyapi1AE401C4POSTv1booksA48C273B": {
+    "myapiv1booksApiPermissiontestapigatewayrestapimyapi1AE401C4POSTv1books67C7577A": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -627,7 +627,7 @@
         }
       }
     },
-    "MyHandlerApiPermissionTesttestapigatewayrestapimyapi1AE401C4POSTv1booksA566985D": {
+    "myapiv1booksApiPermissionTesttestapigatewayrestapimyapi1AE401C4POSTv1booksE8FF0DE5": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",

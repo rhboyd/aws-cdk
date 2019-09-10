@@ -12,9 +12,14 @@ class FirstStack extends cdk.Stack {
 
       this.firstLambda = new lambda.Function(this, 'firstLambda', {
         functionName: 'FirstLambda',
-        code: lambda.Code.asset('/Users/nija/workplace/cdk/hello-cdk/resources'),
+        code: lambda.Code.fromInline(`exports.handler = async function(event) {
+          return  {
+            'headers': { 'Content-Type': 'text/plain' },
+            'statusCode': 200
+          }
+        }`),
         handler: 'index.handler',
-        runtime: lambda.Runtime.NODEJS_10_X,
+        runtime: lambda.Runtime.NODEJS_8_10,
       });
     }
 }

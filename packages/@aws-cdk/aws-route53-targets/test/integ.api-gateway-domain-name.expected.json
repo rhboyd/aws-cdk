@@ -50,7 +50,7 @@
         "HandlerServiceRoleFCDC14AE"
       ]
     },
-    "HandlerApiPermissionawscdkapigwaliasintegapiF4DF08ACANY133739C8": {
+    "apiApiPermissionawscdkapigwaliasintegapiF4DF08ACANY191E74E7": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -91,7 +91,7 @@
         }
       }
     },
-    "HandlerApiPermissionTestawscdkapigwaliasintegapiF4DF08ACANY872335B7": {
+    "apiApiPermissionTestawscdkapigwaliasintegapiF4DF08ACANY2683A512": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -128,7 +128,7 @@
         }
       }
     },
-    "HandlerApiPermissionawscdkapigwaliasintegapiF4DF08ACANYproxyD4D13682": {
+    "apiproxyApiPermissionawscdkapigwaliasintegapiF4DF08ACANYproxy99716204": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -169,7 +169,7 @@
         }
       }
     },
-    "HandlerApiPermissionTestawscdkapigwaliasintegapiF4DF08ACANYproxyFF16208A": {
+    "apiproxyApiPermissionTestawscdkapigwaliasintegapiF4DF08ACANYproxyDB90C359": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",

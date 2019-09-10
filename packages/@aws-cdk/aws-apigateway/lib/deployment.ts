@@ -1,4 +1,4 @@
-import { Construct, DefaultTokenResolver, Lazy, RemovalPolicy, Resource, Stack, StringConcat, Tokenization } from '@aws-cdk/core';
+import cdk = require('@aws-cdk/core');
 import crypto = require('crypto');
 import { CfnDeployment, CfnDeploymentProps } from './apigateway.generated';
 import { IRestApi } from './restapi';
@@ -56,14 +56,14 @@ export interface DeploymentProps  {
  * model. Use the `node.addDependency(dep)` method to circumvent that. This is done
  * automatically for the `restApi.latestDeployment` deployment.
  */
-export class Deployment extends Resource {
+export class Deployment extends cdk.Resource {
   /** @attribute */
   public readonly deploymentId: string;
   public readonly api: IRestApi;
 
   private readonly resource: LatestDeploymentResource;
 
-  constructor(scope: Construct, id: string, props: DeploymentProps) {
+  constructor(scope: cdk.Construct, id: string, props: DeploymentProps) {
     super(scope, id);
 
     this.resource = new LatestDeploymentResource(this, 'Resource', {
@@ -72,11 +72,11 @@ export class Deployment extends Resource {
     });
 
     if (props.retainDeployments) {
-      this.resource.applyRemovalPolicy(RemovalPolicy.RETAIN);
+      this.resource.applyRemovalPolicy(cdk.RemovalPolicy.RETAIN);
     }
 
     this.api = props.api;
-    this.deploymentId = Lazy.stringValue({ produce: () => this.resource.ref });
+    this.deploymentId = cdk.Lazy.stringValue({ produce: () => this.resource.ref });
   }
 
   /**
@@ -96,10 +96,10 @@ class LatestDeploymentResource extends CfnDeployment {
   private hashComponents = new Array<any>();
   private originalLogicalId: string;
 
-  constructor(scope: Construct, id: string, props: CfnDeploymentProps) {
+  constructor(scope: cdk.Construct, id: string, props: CfnDeploymentProps) {
     super(scope, id, props);
 
-    this.originalLogicalId = Stack.of(this).getLogicalId(this);
+    this.originalLogicalId = cdk.Stack.of(this).getLogicalId(this);
   }
 
   /**
@@ -121,7 +121,7 @@ class LatestDeploymentResource extends CfnDeployment {
    * add via `addToLogicalId`.
    */
   protected prepare() {
-    const stack = Stack.of(this);
+    const stack = cdk.Stack.of(this);
 
     // if hash components were added to the deployment, we use them to calculate
     // a logical ID for the deployment resource.
@@ -134,9 +134,9 @@ class LatestDeploymentResource extends CfnDeployment {
             // It's here to be backwards compatible, i.e., prevent LogicalIds to change.
             return stack.resolve(c);
           } catch (e) {
-            return Tokenization.resolve(c, {
+            return cdk.Tokenization.resolve(c, {
               scope: this,
-              resolver: new DefaultTokenResolver(new StringConcat()),
+              resolver: new cdk.DefaultTokenResolver(new cdk.StringConcat()),
               preparing: true,
             });
           }

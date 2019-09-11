@@ -60,8 +60,8 @@ export class SingletonFunction extends FunctionBase {
     this.canCreatePermissions = true; // Doesn't matter, addPermission is overriden anyway
   }
 
-  public addPermission(name: string, permission: Permission, scope?: cdk.Construct) {
-    return this.lambdaFunction.addPermission(name, permission, scope);
+  public addPermission(name: string, permission: Permission) {
+    return this.lambdaFunction.addPermission(name, permission);
   }
 
   private ensureLambda(props: SingletonFunctionProps): IFunction {

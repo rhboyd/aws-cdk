@@ -154,6 +154,7 @@ export interface ResolveOptions {
 
   /**
    * Whether the resolution is being executed during the prepare phase or not.
+   * @default false
    */
   readonly preparing?: boolean;
 }

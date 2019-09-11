@@ -50,7 +50,7 @@
         "HelloServiceRole1E55EA16"
       ]
     },
-    "helloapihelloApiPermissionrestapimultiuseexamplehelloapi9FD0148DGEThello9C440B04": {
+    "helloapihelloGETApiPermissionrestapimultiuseexamplehelloapi9FD0148DGEThello2FD34BC2": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -91,7 +91,7 @@
         }
       }
     },
-    "helloapihelloApiPermissionTestrestapimultiuseexamplehelloapi9FD0148DGEThello7F98E05F": {
+    "helloapihelloGETApiPermissionTestrestapimultiuseexamplehelloapi9FD0148DGEThelloA58B2FAE": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -128,7 +128,7 @@
         }
       }
     },
-    "secondapihelloApiPermissionrestapimultiuseexamplesecondapi5CB05B89GEThello3B7CB175": {
+    "secondapihelloGETApiPermissionrestapimultiuseexamplesecondapi5CB05B89GEThello2D6C1879": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -169,7 +169,7 @@
         }
       }
     },
-    "secondapihelloApiPermissionTestrestapimultiuseexamplesecondapi5CB05B89GEThelloE0D6B261": {
+    "secondapihelloGETApiPermissionTestrestapimultiuseexamplesecondapi5CB05B89GEThelloB0B3B749": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",

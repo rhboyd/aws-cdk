@@ -430,7 +430,7 @@
         "MyHandlerServiceRoleFFA06653"
       ]
     },
-    "myapiv1toysApiPermissiontestapigatewayrestapimyapi1AE401C4GETv1toys4996AB00": {
+    "myapiv1toysGETApiPermissiontestapigatewayrestapimyapi1AE401C4GETv1toysA829D1CC": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -471,7 +471,7 @@
         }
       }
     },
-    "myapiv1toysApiPermissionTesttestapigatewayrestapimyapi1AE401C4GETv1toys235E617F": {
+    "myapiv1toysGETApiPermissionTesttestapigatewayrestapimyapi1AE401C4GETv1toys9E0BAE9F": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -508,7 +508,7 @@
         }
       }
     },
-    "myapiv1booksApiPermissiontestapigatewayrestapimyapi1AE401C4GETv1books569CDE64": {
+    "myapiv1booksGETApiPermissiontestapigatewayrestapimyapi1AE401C4GETv1books484ACD3F": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -549,7 +549,7 @@
         }
       }
     },
-    "myapiv1booksApiPermissionTesttestapigatewayrestapimyapi1AE401C4GETv1books83C4BA55": {
+    "myapiv1booksGETApiPermissionTesttestapigatewayrestapimyapi1AE401C4GETv1booksE255E31A": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -586,7 +586,7 @@
         }
       }
     },
-    "myapiv1booksApiPermissiontestapigatewayrestapimyapi1AE401C4POSTv1books67C7577A": {
+    "myapiv1booksPOSTApiPermissiontestapigatewayrestapimyapi1AE401C4POSTv1books2B1BC62B": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -627,7 +627,7 @@
         }
       }
     },
-    "myapiv1booksApiPermissionTesttestapigatewayrestapimyapi1AE401C4POSTv1booksE8FF0DE5": {
+    "myapiv1booksPOSTApiPermissionTesttestapigatewayrestapimyapi1AE401C4POSTv1books816A6B37": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",

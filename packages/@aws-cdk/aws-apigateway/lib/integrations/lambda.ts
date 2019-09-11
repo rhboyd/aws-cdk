@@ -1,6 +1,5 @@
 import iam = require('@aws-cdk/aws-iam');
 import lambda = require('@aws-cdk/aws-lambda');
-import cdk = require('@aws-cdk/core');
 import { IntegrationOptions } from '../integration';
 import { Method } from '../method';
 import { AwsIntegration } from './aws';
@@ -60,15 +59,17 @@ export class LambdaIntegration extends AwsIntegration {
 
     this.handler.addPermission(`ApiPermission.${desc}`, {
       principal,
+      scope: method,
       sourceArn: method.methodArn,
-    }, method.node.scope as cdk.Construct);
+    });
 
     // add permission to invoke from the console
     if (this.enableTest) {
       this.handler.addPermission(`ApiPermission.Test.${desc}`, {
         principal,
-        sourceArn: method.testMethodArn
-      }, method.node.scope as cdk.Construct);
+        scope: method,
+        sourceArn: method.testMethodArn,
+      });
     }
   }
 }
